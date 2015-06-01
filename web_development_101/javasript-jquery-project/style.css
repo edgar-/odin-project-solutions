@@ -1,0 +1,23 @@
+#container {
+    width: 720px;
+    background-color: #ebf0eb;
+    margin: 10px auto;
+}
+.button {
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.grid {
+    background-color: #880000;
+    //margin: 5px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.visited {
+    background-color: #006699;
+}
