@@ -2,15 +2,12 @@
 =end
 
 def substrings(str, dict)
-   dict.each.with_object(Hash.new(0)) do |word, hash|
-       
-       s, wrd, wrd_len = str.downcase, word.downcase, word.length
-       
-       while (s.include?(wrd))
-            hash[word] += 1
-            s = s.slice(s.index(wrd) + wrd_len..-1)
-      end
-   end
+  s = (' ' + str + ' ').downcase
+  
+  dict.each.with_object(Hash.new(0)) do |word, hash|
+    word = word.downcase
+    hash[word] = s.split(word).count - 1 if s.include?(word)
+  end
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
