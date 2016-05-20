@@ -5,8 +5,8 @@ module Enumerable
     arr = arr.to_a if arr.is_a? Hash
     i = 0
     while i < arr.length
-        yield(arr[i])
-        i += 1
+      yield(arr[i])
+      i += 1
     end
     arr
   end
